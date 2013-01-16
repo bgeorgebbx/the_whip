@@ -9,11 +9,11 @@
       var socket = io.connect(window.location.hostname);
 
       socket.on('whip', function (data) {
-        alert(data.val);
+        $('body').append('<h1>'+data.val+'</h1>');
       });
 
       socket.on('init', function( data ) {
-        console.log(data.msg);
+        $('#init').html(data.msg);
       });
 
       function kacrack(e) {
@@ -29,5 +29,9 @@
   </head>
   <body>
       <button type="submit" id="jones">Press Me</button>
+      <p id="init"></p>
+      <div id="container">
+        
+      </div>
   </body>
 </html>
