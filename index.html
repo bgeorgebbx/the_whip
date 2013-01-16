@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="./socket.io/socket.io.js"></script>
+    <script>
+    var socket = io.connect('http://localhost:3000');
+
+    socket.on('whip', function (data) {
+      console.log(data.val);
+    });
+
+    function kacrack(e) {
+      socket.emit('crack', { method: "fire" });
+    }
+        
+    $(document).ready( function() {      
+      
+      $('#jones').click( function(e) {
+        kacrack();
+      });
+
+    });
+    </script>
+  </head>
+  <body>
+      <button type="submit" id="jones" value="Press Me" />
+  </body>
+</html>
