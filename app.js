@@ -1,7 +1,5 @@
 
 var express = require('express')
-  , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
 
@@ -20,7 +18,6 @@ app.get('/', function( req, res ) {
 app.get('/socket.io/socket.io.js', function( req, res ) {
   res.sendfile( __dirname + "/node_modules/socket.io/lib/socket.io.js" );
 });
-
 
 io.sockets.on('connection', function( socket ) {
   socket.on('crack', function(data) {
