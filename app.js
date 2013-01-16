@@ -20,6 +20,7 @@ app.get('/socket.io/socket.io.js', function( req, res ) {
 });
 
 io.sockets.on('connection', function( socket ) {
+  socket.emit( 'init', { msg: "initiated" });
   socket.on('crack', function(data) {
     socket.emit('whip', { val: "KA CRACK" });
   });

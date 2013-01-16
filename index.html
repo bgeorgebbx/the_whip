@@ -9,7 +9,11 @@
       var socket = io.connect(window.location.hostname);
 
       socket.on('whip', function (data) {
-        console.log(data.val);
+        alert(data.val);
+      });
+
+      socket.on('init', function( data ) {
+        console.log(data.msg);
       });
 
       function kacrack(e) {
