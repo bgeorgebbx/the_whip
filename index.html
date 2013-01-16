@@ -3,17 +3,18 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="./socket.io/socket.io.js"></script>
     <script>
-    var socket = io.connect(window.location.hostname);
-
-    socket.on('whip', function (data) {
-      console.log(data.val);
-    });
-
-    function kacrack(e) {
-      socket.emit('crack', { method: "fire" });
-    }
+    
         
-    $(document).ready( function() {      
+    $(document).ready( function() {
+      var socket = io.connect(window.location.hostname);
+
+      socket.on('whip', function (data) {
+        console.log(data.val);
+      });
+
+      function kacrack(e) {
+        socket.emit('crack', { method: "fire" });
+      }
       
       $('#jones').click( function(e) {
         kacrack();
