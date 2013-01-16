@@ -3,7 +3,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="./socket.io/socket.io.js"></script>
     <script>
-    var socket = io.connect('http://localhost:3000');
+    var socket = io.connect('http://localhost');
 
     socket.on('whip', function (data) {
       console.log(data.val);
@@ -23,6 +23,6 @@
     </script>
   </head>
   <body>
-      <button type="submit" id="jones" value="Press Me" />
+      <button type="submit" id="jones">Press Me</button>
   </body>
 </html>
