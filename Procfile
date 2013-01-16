@@ -1,1 +1,1 @@
-node: app.js
+whip: node app.js
