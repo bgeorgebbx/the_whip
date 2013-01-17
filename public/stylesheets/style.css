@@ -17,7 +17,7 @@ button {
 	border-radius:50%;
 	width:150px;
 	height:150px;
-	margin:150px auto 10px auto;
+	margin:100px auto 10px auto;
 	background-image: url( "/jones.png" );
 	border:0px;
 	box-shadow: 0px 5px 6px #543319;
@@ -27,7 +27,7 @@ button:active {
 	border-radius:50%;
 	width:150px;
 	height:150px;
-	margin:155px auto 5px auto;
+	margin:105px auto 5px auto;
 	background-image: url( "/jones.png" );
 	border:0px;
 	box-shadow: 0px 2px 6px #543319;
