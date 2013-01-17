@@ -1,8 +1,46 @@
+html {
+	width:100%;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+	width:100%;
+	height:100%;
+	background: #995533;
+	background-image: linear-gradient( top, #995533, #CE8D4D );
+	background-image: -o-linear-gradient( top, #995533, #CE8D4D );
+	background-image: -webkit-linear-gradient( top, #995533, #CE8D4D );
+	background-image: -moz-linear-gradient( top, #995533, #CE8D4D );
+	background-image: -ms-linear-gradient( top, #995533, #CE8D4D );
+	text-align: center;
 }
 
-a {
-  color: #00B7FF;
+button {
+	border-radius:50%;
+	width:150px;
+	height:150px;
+	margin:150px auto 10px auto;
+	background-image: url( "/jones.png" );
+	border:0px;
+	box-shadow: 0px 5px 6px #543319;
+}
+
+button:active {
+	border-radius:50%;
+	width:150px;
+	height:150px;
+	margin:155px auto 5px auto;
+	background-image: url( "/jones.png" );
+	border:0px;
+	box-shadow: 0px 2px 6px #543319;
+}
+
+p#init {
+	font-size: 2.0em;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #F5EFD0;
+	text-align: center;
+}
+
+audio {
+	visibility: none;
 }
